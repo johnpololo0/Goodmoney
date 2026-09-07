@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -88,15 +89,8 @@
       cursor: pointer;
     }
 
-    .message {
-      display: none;
-      margin-top: 20px;
-      padding: 15px;
-      background: #fff3cd;
-      color: #856404;
-      border-radius: 8px;
-      text-align: center;
-      line-height: 1.5;
+    .btn:hover {
+      background: #066b4d;
     }
 
     .register {
@@ -115,6 +109,17 @@
       text-decoration: none;
     }
 
+    .demo {
+      margin-top: 20px;
+      padding: 14px;
+      background: #fff3cd;
+      color: #856404;
+      border-radius: 8px;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
     footer {
       text-align: center;
       color: #687386;
@@ -129,6 +134,7 @@
   <h1>Goodmoney</h1>
 </header>
 
+
 <div class="container">
 
   <div class="form-box">
@@ -138,6 +144,7 @@
     <p class="description">
       Connectez-vous à votre espace Goodmoney.
     </p>
+
 
     <form id="loginForm">
 
@@ -152,6 +159,7 @@
         required
       >
 
+
       <label for="password">
         Mot de passe
       </label>
@@ -163,22 +171,41 @@
         required
       >
 
-      <button type="submit" class="btn">
+
+      <button
+        type="submit"
+        class="btn"
+      >
         Se connecter
       </button>
 
     </form>
 
-    <div class="message" id="message">
-      La connexion réelle sera activée lorsque nous aurons
-      installé le serveur sécurisé de Goodmoney.
+
+    <div class="demo">
+
+      ⚠️ <strong>Mode démonstration</strong><br>
+
+      Cette connexion permet actuellement
+      d'accéder à la maquette du tableau de bord.
+      L'authentification réelle sera ajoutée avec
+      un serveur sécurisé.
+
     </div>
 
-    <a href="Inscription.html" class="register">
+
+    <a
+      href="Inscription.html"
+      class="register"
+    >
       Créer un compte
     </a>
 
-    <a href="index.html" class="back">
+
+    <a
+      href="index.html"
+      class="back"
+    >
       ← Retour à l'accueil
     </a>
 
@@ -186,21 +213,31 @@
 
 </div>
 
+
 <footer>
   © 2026 Goodmoney
 </footer>
 
+
 <script>
+
   document
     .getElementById("loginForm")
     .addEventListener("submit", function(event) {
 
       event.preventDefault();
 
-      document
-        .window.location.href = "Dashboard.html";
-  
+      /*
+        Démonstration uniquement :
+        redirection vers le tableau de bord.
+      */
+
+      window.location.href = "Dashboard.html";
+
+    });
+
 </script>
 
 </body>
+
 </html>
