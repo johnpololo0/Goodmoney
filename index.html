@@ -54,4 +54,258 @@
 
     .hero p {
       color: #687386;
-      font
+      font-size: 17px;
+      line-height: 1.6;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    .signup-btn {
+      display: inline-block;
+      margin-top: 25px;
+      background: #087f5b;
+      color: white;
+      padding: 14px 25px;
+      border-radius: 9px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 16px;
+    }
+
+    .plans {
+      max-width: 900px;
+      margin: 20px auto 50px;
+      padding: 20px;
+    }
+
+    .plans h2 {
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .plan-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+      gap: 18px;
+    }
+
+    .plan {
+      background: white;
+      padding: 25px 15px;
+      border-radius: 14px;
+      text-align: center;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    }
+
+    .plan h3 {
+      font-size: 23px;
+      color: #087f5b;
+      margin-bottom: 10px;
+    }
+
+    .plan p {
+      color: #687386;
+      margin-bottom: 18px;
+    }
+
+    .choose-btn {
+      display: inline-block;
+      background: #087f5b;
+      color: white;
+      padding: 11px 20px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .info {
+      max-width: 800px;
+      margin: 0 auto 40px;
+      padding: 20px;
+      text-align: center;
+      color: #687386;
+      line-height: 1.6;
+    }
+
+    footer {
+      background: #172033;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    @media (max-width: 600px) {
+
+      header h1 {
+        font-size: 22px;
+      }
+
+      .hero h2 {
+        font-size: 27px;
+      }
+
+      .hero {
+        padding-top: 40px;
+      }
+
+      .plans {
+        padding: 15px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- EN-TÊTE -->
+  <header>
+
+    <h1>Goodmoney</h1>
+
+    <a href="Connexion.html" class="login-btn">
+      Connexion
+    </a>
+
+  </header>
+
+
+  <!-- ACCUEIL -->
+  <section class="hero">
+
+    <h2>
+      Investissez avec Goodmoney
+    </h2>
+
+    <p>
+      Découvrez nos différentes formules et
+      gérez votre projet d'investissement depuis
+      votre espace personnel.
+    </p>
+
+    <a href="Inscription.html" class="signup-btn">
+      Créer un compte
+    </a>
+
+  </section>
+
+
+  <!-- FORMULES -->
+  <section class="plans">
+
+    <h2>
+      Nos formules
+    </h2>
+
+    <div class="plan-container">
+
+
+      <div class="plan">
+
+        <h3>3 000 FCFA</h3>
+
+        <p>
+          Formule de départ
+        </p>
+
+        <a href="Inscription.html" class="choose-btn">
+          Choisir
+        </a>
+
+      </div>
+
+
+      <div class="plan">
+
+        <h3>5 000 FCFA</h3>
+
+        <p>
+          Formule standard
+        </p>
+
+        <a href="Inscription.html" class="choose-btn">
+          Choisir
+        </a>
+
+      </div>
+
+
+      <div class="plan">
+
+        <h3>10 000 FCFA</h3>
+
+        <p>
+          Formule avancée
+        </p>
+
+        <a href="Inscription.html" class="choose-btn">
+          Choisir
+        </a>
+
+      </div>
+
+
+      <div class="plan">
+
+        <h3>25 000 FCFA</h3>
+
+        <p>
+          Formule premium
+        </p>
+
+        <a href="Inscription.html" class="choose-btn">
+          Choisir
+        </a>
+
+      </div>
+
+
+      <div class="plan">
+
+        <h3>50 000 FCFA</h3>
+
+        <p>
+          Formule supérieure
+        </p>
+
+        <a href="Inscription.html" class="choose-btn">
+          Choisir
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- INFORMATION -->
+  <section class="info">
+
+    <p>
+      ⚠️ Goodmoney est actuellement une démonstration.
+      Aucun paiement réel n'est effectué sur cette version.
+    </p>
+
+  </section>
+
+
+  <!-- PIED DE PAGE -->
+  <footer>
+
+    <p>
+      © 2026 Goodmoney
+    </p>
+
+    <p>
+      Plateforme d'investissement
+    </p>
+
+  </footer>
+
+</body>
+
+</html>
