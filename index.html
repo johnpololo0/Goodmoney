@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Goodmoney</title>
+
+  <title>Goodmoney - Investissement</title>
 
   <style>
+
     * {
       box-sizing: border-box;
       margin: 0;
@@ -21,7 +24,8 @@
     header {
       background: #087f5b;
       color: white;
-      padding: 20px;
+      padding: 18px 20px;
+
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -31,33 +35,36 @@
       font-size: 25px;
     }
 
-    header a {
+    .connexion {
       color: white;
       text-decoration: none;
       border: 1px solid white;
       padding: 10px 15px;
-      border-radius: 7px;
+      border-radius: 8px;
     }
 
     .hero {
       background: white;
       text-align: center;
-      padding: 60px 20px;
+      padding: 65px 20px;
     }
 
     .hero h2 {
-      font-size: 35px;
+      font-size: 38px;
+      line-height: 1.2;
       margin-bottom: 20px;
     }
 
-    .hero span {
+    .hero h2 span {
       color: #087f5b;
     }
 
     .hero p {
-      color: #667085;
+      max-width: 650px;
+      margin: 0 auto 30px;
+      color: #687386;
+      font-size: 18px;
       line-height: 1.6;
-      margin-bottom: 30px;
     }
 
     .btn {
@@ -66,191 +73,47 @@
       color: white;
       text-decoration: none;
       padding: 15px 25px;
-      border-radius: 8px;
+      border-radius: 9px;
       font-weight: bold;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background: #066b4d;
     }
 
     .plans {
-      padding: 40px 20px;
+      padding: 50px 20px;
       text-align: center;
     }
 
     .plans h2 {
+      font-size: 30px;
       margin-bottom: 30px;
     }
 
     .cards {
-      max-width: 900px;
+      max-width: 1000px;
       margin: auto;
+
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      grid-template-columns:
+      repeat(auto-fit, minmax(220px, 1fr));
+
       gap: 20px;
     }
 
     .card {
       background: white;
       padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+      border-radius: 15px;
+
       text-align: left;
+
+      box-shadow:
+      0 4px 15px rgba(0,0,0,0.08);
     }
 
     .card h3 {
-      color: #087f5b;
-      margin-bottom: 15px;
-    }
-
-    .price {
-      font-size: 25px;
-      font-weight: bold;
-      margin-bottom: 15px;
-    }
-
-    .card p {
-      color: #667085;
-      line-height: 1.7;
-      margin-bottom: 20px;
-    }
-
-    .investir {
-      display: inline-block;
-      background: #087f5b;
-      color: white;
-      text-decoration: none;
-      padding: 10px 18px;
-      border-radius: 7px;
-      font-weight: bold;
-    }
-
-    footer {
-      background: #172033;
-      color: white;
-      text-align: center;
-      padding: 25px;
-      margin-top: 30px;
-    }
-  </style>
-</head>
-
-<body>
-
-<header>
-  <h1>Goodmoney</h1>
-
-  <a href="Connexion.html">
-    Connexion
-  </a>
-</header>
-
-<section class="hero">
-
-  <h2>
-    Investissez avec<br>
-    <span>Goodmoney</span>
-  </h2>
-
-  <p>
-    Gérez vos projets et consultez votre
-    portefeuille depuis votre téléphone.
-  </p>
-
-  <a href="Inscription.html" class="btn">
-    Créer un compte
-  </a>
-
-</section>
-
-<section class="plans">
-
-  <h2>Nos plans</h2>
-
-  <div class="cards">
-
-    <div class="card">
-      <h3>Débutant</h3>
-      <div class="price">3 000 FCFA</div>
-      <p>
-        Durée : 30 jours<br>
-        Suivi du portefeuille
-      </p>
-
-      <a href="Inscription.html" class="investir">
-        Investir
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>Essentiel</h3>
-      <div class="price">5 000 FCFA</div>
-      <p>
-        Durée : 30 jours<br>
-        Suivi du portefeuille
-      </p>
-
-      <a href="Inscription.html" class="investir">
-        Investir
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>Standard</h3>
-      <div class="price">10 000 FCFA</div>
-      <p>
-        Durée : 60 jours<br>
-        Suivi du portefeuille
-      </p>
-
-      <a href="Inscription.html" class="investir">
-        Investir
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>Avancé</h3>
-      <div class="price">25 000 FCFA</div>
-      <p>
-        Durée : 60 jours<br>
-        Suivi du portefeuille
-      </p>
-
-      <a href="Inscription.html" class="investir">
-        Investir
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>Premium</h3>
-      <div class="price">50 000 FCFA</div>
-      <p>
-        Durée : 90 jours<br>
-        Suivi du portefeuille
-      </p>
-
-      <a href="Inscription.html" class="investir">
-        Investir
-      </a>
-    </div>
-
-    <div class="card">
-      <h3>VIP</h3>
-      <div class="price">100 000 FCFA</div>
-      <p>
-        Durée : 90 jours<br>
-        Suivi du portefeuille
-      </p>
-
-      <a href="Inscription.html" class="investir">
-        Investir
-      </a>
-    </div>
-
-  </div>
-
-</section>
-
-<footer>
-  © 2026 Goodmoney — Tous droits réservés.
-</footer>
-
-</body>
-</html>
+      color: #
